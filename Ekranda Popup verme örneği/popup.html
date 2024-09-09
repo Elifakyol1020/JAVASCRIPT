@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+ <style>
+    button{
+        display: block;
+        margin: 20px auto;
+        background: red;
+        color: white;
+        border: 0;
+        padding: 6px 10px;
+    }
+    .main-popup{
+        background: rgba(0, 0, 0, 0.5);
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: none;
+    }
+    .popup{
+        text-align: center;
+        width: 100%;
+        max-width: 350px;
+        margin: auto;
+        margin-top: 300px;
+        padding: 30px;
+        background: white;
+        position: relative;
+    }
+    .popup a{
+       background: red;
+       color: white;
+       padding: 7px 11px;
+       text-decoration: none;
+    }
+    .popup-close{
+        position: absolute;
+        cursor: pointer;
+        top: 4px;
+        right: 7px;
+    }
+ </style>
+<body>
+    <div style="display:flex; justify-content:center; align-items: center;">
+        <h1 id="elif">DOM</h1>
+    </div>
+    <button>Tıkla</button>
+    <div class="main-popup">
+        <div class="popup">
+            <div class="popup-close">x</div>
+            <div class="popup-content">
+                <h3>Elif Training</h3>
+                <p>Javascript Eğitimi</p>
+                <a href="#">Detayı Gör</a>
+            </div>
+        </div>
+    </div>
+    <script src="popup.js"></script>
+</body>
+
+</html>
