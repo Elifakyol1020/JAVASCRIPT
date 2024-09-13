@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="app.css">
+    <style>
+        body{
+            background-color: currentcolor;
+        }
+        .container{
+            max-width: 450px;
+        }
+        input[type=text],input[type=text]:focus{
+            font-weight: normal;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="text-center text-light my-4">
+            <h1 class="mb-4">Todo App</h1>
+            <form class="search">
+                <input class="form-control" type="text" name="search" placeholder="Ara..."/>
+            </form>
+        </header>
+        <ul class="list-group todos fw-semibold">
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Yüzmeye git</span>
+                <i class="delete fa-solid fa-trash-can"></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Manavdan limon al</span>
+                <i class="delete fa-solid fa-trash-can "></i>
+            </li>
+            <li class="list-group-item d-flex justify-content-between align-items-center">
+                <span>Javascript çalış</span>
+                <i class="delete fa-solid fa-trash-can"></i>
+            </li>
+        </ul>
+        <form class="text-center my-4 add">
+            <label class="text-light fw-semibold">Yeni İş Ekle</label>
+            <input class="form-control m-auto" type="text" name="add"/>
+        </form>
+    </div>
+    <script src="https://kit.fontawesome.com/6057ab033c.js" crossorigin="anonymous"></script>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
